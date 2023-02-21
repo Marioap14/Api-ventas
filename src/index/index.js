@@ -13,7 +13,7 @@ module.exports.IndexApi = (app) =>{
             sales: `https://${req.headers.host}/api/sales`
         } 
 
-        res.success(res, 200, 'Api Inventario', menu)
+        Response.success(res, 200, 'Api Inventario', menu)
     })
 
     app.use('/',router);
